@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 
+# Use MySQL by default, specify the last stable gem
+gem 'mysql2', '~> 0.3.20'
+
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
@@ -43,7 +46,7 @@ end
 
 group :development do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+#  gem 'sqlite3'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
@@ -53,8 +56,8 @@ group :development do
 end
 
 group :production, :staging do
-  gem 'mysql2'
-  gem 'pg'
+#  gem 'mysql2'
+#  gem 'pg'  #commenting out postgresql
 end
 
 # Manage application environment variables
